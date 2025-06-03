@@ -31,7 +31,7 @@
     "test:mariadb": "N8N_LOG_LEVEL=silent DB_TYPE=mariadb DB_TABLE_PREFIX=test_ jest --no-coverage",
     "test:mysql": "N8N_LOG_LEVEL=silent DB_TYPE=mysqldb DB_TABLE_PREFIX=test_ jest --no-coverage",
     "watch": "tsc-watch -p tsconfig.build.json --onCompilationComplete \"tsc-alias -p tsconfig.build.json\"",
-    "postinstall": "cp -R ../../node_modules/.pnpm/speakeasy@2.0.0/node_modules/speakeasy ./node_modules/"
+    "postinstall": "cp -R ../../node_modules/.pnpm/speakeasy@2.0.0/node_modules/speakeasy ./node_modules/ || true"
   },
   "bin": {
     "n8n": "./bin/n8n"
